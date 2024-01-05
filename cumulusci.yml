@@ -1,0 +1,21 @@
+minimum_cumulusci_version: '3.83.0'
+project:
+    name: DM_ORG
+    package:
+        name: DM_Org
+        api_version: '59'
+    git:
+    source_format: sfdx
+
+tasks:
+    robot:
+        options:
+            suites: robot/DM_ORG/tests
+            options:
+                outputdir: robot/DM_ORG/results
+
+    robot_testdoc:
+        options:
+            path: robot/DM_ORG/tests
+            output: robot/DM_ORG/doc/DM_ORG_tests.html
+
